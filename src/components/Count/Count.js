@@ -1,4 +1,5 @@
 import { React, useState, useEffect } from "react";
+import { store, view } from 'react-easy-state'; 
 import "./Count.css";
 
 const Count = (props) => <h2 className="count">{props.children}</h2>;

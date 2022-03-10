@@ -1,4 +1,5 @@
 import React from "react";
+import { store, view } from 'react-easy-state'; 
 import "./Wrapper.css";
 
 export const Wrapper = (props) => {

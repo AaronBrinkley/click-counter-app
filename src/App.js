@@ -1,4 +1,5 @@
 import React, { Component, useState } from "react";
+import { store, view } from 'react-easy-state'; 
 import { Wrapper } from "./components/Wrapper";
 import Title from "./components/Title";
 import Count from "./components/Count";
@@ -7,11 +8,20 @@ import "./App.css";
 class App extends Component {
   state = {
     CountNum: 0,
-  };
+  }; 
+  //Potential Easy-State logic
+  // numVar = store({
+  //   CountNum: 0
+  // })
 
   setCountNum = (val) => {
     this.setState({ CountNum: val });
   };
+  //Potential Easy-State logic
+  // setCountNum = (val) => {
+  //   numVar.CountNum = val;
+  // };
+
 
   hourCheck = () => {
     let hourCount = new Date().getHours();
